@@ -1,1 +1,93 @@
 @import "~bootstrap/scss/bootstrap";
+// HEADER
+header {
+    .top-header {
+        background-color: #0282f9;
+        min-height: 20px;
+
+        .top-header-container {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+
+            span {
+                display: inline-block;
+                color: white;
+                font-size: 10px;
+                text-align: end;
+            }
+        }
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .header-logo {
+            width: 80px;
+        }
+
+        ul {
+            margin-bottom: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                height: 100%;
+                margin-right: 20px;
+                .link {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                .link.active {
+                    color: #399dfa;
+                    border-bottom: 3px solid #399dfa;
+                }
+            }
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            width: 10%;
+
+            border-bottom: 2px solid #399dfa;
+
+            input[type="search"]::placeholder {
+                text-align: end;
+            }
+        }
+    }
+
+    .header-jumbo {
+        height: 400px;
+        background-image: url("../images/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+//Main
+.colore_back{
+    background-color: #1C1C1C;
+}
+.titolo-fumetti{
+    position: relative;
+    top: -2.3rem;
+    font-size: 2.5rem;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: #0282F9;
+    margin-left: 2rem;
+}
+.button-section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}

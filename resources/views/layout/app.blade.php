@@ -8,11 +8,14 @@
     <title>Document</title>
 
     @vite('resources/js/app.js')
+    
   </head>
 
   <body>
     @include('partials.header')
-    <h1>Laravel with Bootstrap + Vite</h1>
+
+    @yield('main-content')
+
     @include('partials.footer')
   </body>
 
